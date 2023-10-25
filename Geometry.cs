@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Labb7_OOP_Polymorphism
 {
-    internal class Geometry
+    //Base class
+    internal abstract class Geometry
     {
+        public double Pi = 3.14;
         public double Radius { get; set; }
         public int Height { get; set; }
         public int Base { get; set; }
 
-
+        //Method to be overwritten by derived classes
         public virtual double CalcArea()
         {
             return 0;
